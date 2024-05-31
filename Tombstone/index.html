@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loved Ones Memorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the Loved Ones Memorial</h1>
+    <div id="upload-form">
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="image">Upload Image:</label>
+            <input type="file" name="image" id="image" accept="image/*">
+            <label for="video">Upload Video:</label>
+            <input type="file" name="video" id="video" accept="video/*">
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <div id="qr-code"></div>
+
+    <div id="uploaded-content"></div>
+
+    <script src="qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
